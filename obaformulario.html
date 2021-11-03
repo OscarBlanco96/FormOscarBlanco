@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulario</title>
+</head>
+<body>
+<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+<table border=1>
+    <tr>
+        <th colspan="2">Formulario</th>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td><input type="text" placeholder="Escribe tu nombre" NAME="nombre"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" placeholder="Password" NAME="password"></td>
+    </tr>
+    <tr>
+        <td><label for="dirección">Dirección</label></td>
+        <td><textarea id="dirección"></textarea></td>
+    </tr>
+    <tr>
+        <td>Sexo</td>
+        <td><input type="radio" name="sexo" id="sexoH" value="hombre"><label for="sexoH">Hombre</label><br/>
+        <input type="radio" name="sexo" id="sexoM" value="mujer"><label for="sexoM">Mujer</label></td>
+    </tr>
+    <tr>
+        <td>Edad</td>
+        <td><select name="edad" id="edad">
+            <option value="Menor de 16">menor de 16</option>
+            <option value="Entre 16 y 18">entre 16 y 18</option>
+            <option value="Mayor de 18">mayor de 18</option>
+            <option value=0 selected>Seleccione la opción</option></select></td>
+    </tr>
+    <tr>
+        <td>Deportes</td>
+        <td><input type="checkbox" name="Deporte[]" id="Futbol" value="futbol"><label for="Futbol">Futbol</label><br/>
+        <input type="checkbox" name="Deporte[]" id="Tenis" value="tenis"><label for="Tenis">Tenis</label><br/>
+        <input type="checkbox" name="Deporte[]" id="Baloncesto" value="baloncesto"><label for="Baloncesto">Baloncesto</label><br/>
+        <input type="checkbox" name="Deporte[]" id="Balón mano" value="balón mano"><label for="Balón mano">Balón mano</label><br/>
+        <input type="checkbox" name="Deporte[]" id="Natación" value="natación"><label for="Natación">Natación</label><br/></td>
+    </tr>
+    <tr>
+        <th colspan="2"><input type="file" value="Examinar">
+    </tr>
+    <tr>
+        <th colspan="2"><input type="button" value="click me"><input type="reset" value="Restablecer"><input type="submit" value="Submit Form"></th>
+    </tr>
+</table>
+</body>
+</html>
